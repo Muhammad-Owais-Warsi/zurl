@@ -1,5 +1,5 @@
 # Zurl
-**Zurl** is a lightweight and simple **curl** alternative built in Rust.
+**Zurl** is a simple, lightweight, and fast alternative to **curl**, built in Rust.
 
 ## Installation
 
