@@ -9,9 +9,27 @@ use parsing::parse_query;
 use parsing::parse_header;
 use request::build_request;
 use request::Params;
+use figlet_rs::FIGfont;
+use std::env;
+
+fn print_welcome_message() {
+    let standard_font = FIGfont::standard().unwrap();
+    let figure = standard_font.convert("ZURL");
+    assert!(figure.is_some());
+    println!("{}", figure.unwrap());
+}
+
+
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
+
+    let is_installed = env::args().len() == 1;  
+
+    if is_installed {
+        
+        print_welcome_message();
+    }
     let args = Args::parse();
 
     println!("{}", args.method);
