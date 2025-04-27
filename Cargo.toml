@@ -1,6 +1,6 @@
 [package]
 name = "zurl"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Because simplicity matters, even in APIs"
 readme = "README.md"
