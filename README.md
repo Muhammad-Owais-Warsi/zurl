@@ -23,25 +23,25 @@ Once installed, you can use **zurl** from the command line to make HTTP requests
 zurl <METHOD> <URL>
 ```
 
-## `GET` Request
+### `GET` Request
 
 ```
 zurl GET <URL>
 ```
 
-## Add `json` to your request
+### Add `json` to your request
 
 ```
 zurl POST <URL> --json '{"key":"value"}'
 ```
 
-## Add custom `headers` to your request
+### Add custom `headers` to your request
 
 ```
 zurl GET <URL> -H "Authorization: Bearer YOUR_TOKEN" -H "Custom-Header: Value"
 ```
 
-## Add `query` parameters to your request
+### Add `query` parameters to your request
 
 ```
 zurl GET https://api.example.com/search -q "key1=value1&key2=value2"
@@ -52,7 +52,7 @@ zurl GET https://api.example.com/search -q "key1=value1&key2=value2"
 ## Contributing
 We welcome contributions to Zurl! If you'd like to improve the tool, please feel free to fork the project, submit an issue, or create a pull request.
 
-### Steps to Contribute:
+**Steps to Contribute**:
 
 1. Fork the repository.
 2. Clone your fork.
