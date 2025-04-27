@@ -1,5 +1,5 @@
 # Zurl
-**Zurl** is a lightweight command-line tool built in Rust that allows you to make HTTP requests directly from your terminal
+**Zurl** is a lightweight command-line tool built in Rust that allows you to make HTTP requests directly from your terminal.
 
 ## Installation
 
