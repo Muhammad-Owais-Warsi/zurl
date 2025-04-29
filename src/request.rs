@@ -9,13 +9,18 @@ pub struct Params {
     pub query: Vec<(String, String)>,
     pub json: Option<Value>,
 }
-
+ 
 pub async fn build_request(params: Params) -> Result<(), Box<dyn std::error::Error>> {
     let method = params.method.parse::<Method>()?;
-    let url = params.url;
-
+    let mut url = params.url;
+    
     let client: Client = Client::new();
 
+    if url.starts_with(":") {
+        url = format!("http://localhost{}", &url[..]);
+        println!("{}",url);
+    }
+    
     let mut request = client.request(method, &url);
 
     if let Some(json) = params.json {
