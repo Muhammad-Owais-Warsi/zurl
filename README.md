@@ -47,6 +47,13 @@ zurl GET <URL> -H "Authorization: Bearer YOUR_TOKEN" -H "Custom-Header: Value"
 zurl GET https://api.example.com/search -q "key1=value1&key2=value2"
 ```
 
+### Sending request to your `localhost`
+You can either write the complete url `http://loclahost:<port>/<path>` or can use the below short-hand.
+
+```
+zurl GET :<PORT>/<PATH>
+```
+
 ---
 
 ## Contributing
