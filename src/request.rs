@@ -18,7 +18,6 @@ pub async fn build_request(params: Params) -> Result<(), Box<dyn std::error::Err
 
     if url.starts_with(":") {
         url = format!("http://localhost{}", &url[..]);
-        println!("{}",url);
     }
     
     let mut request = client.request(method, &url);
