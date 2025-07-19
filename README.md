@@ -23,7 +23,7 @@ Once installed, you can use **zurl** from the command line to make HTTP requests
 zurl <METHOD> <URL>
 ```
 
-### `GET` Request
+### `HTTP` Request
 
 ```
 zurl GET <URL>
